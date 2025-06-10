@@ -80,7 +80,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       object: nil
     )
 
-    self.hotKey = HotKey(key: .h, modifiers: [.control, .shift])
+    self.hotKey = HotKey(key: .grave, modifiers: [.command])
     hotKey?.keyDownHandler = { [weak self] in
       self?.didTapRecording()
     }
