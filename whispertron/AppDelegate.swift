@@ -67,7 +67,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   private var audioLevelTimer: Timer?
   func applicationDidFinishLaunching(_ aNotification: Notification) {
 
-    self.hotKey = HotKey(key: .h, modifiers: [.control, .shift])
+    self.hotKey = HotKey(key: .grave, modifiers: [.command])
     hotKey?.keyDownHandler = { [weak self] in
       self?.didTapRecording()
     }
